@@ -15,7 +15,12 @@ print(i2c.scan())
 ```
 ![thonny install](https://raw.githubusercontent.com/Cesarbautista10/ISE_SSD1306/main/Images/ins.png)
 
-Code example
+
+The next diagram illustrates the communication between one of the two microcontrollers and the ability to display a default text on the OLED screen.
+
+![](https://raw.githubusercontent.com/Cesarbautista10/ISE_SSD1306/main/Images/OLED1.jpg)
+
+## Code example
 
 ```py
 
