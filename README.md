@@ -13,7 +13,7 @@ i2c = machine.I2C(0, sda=machine.Pin(21), scl=machine.Pin(22))
 
 print(i2c.scan())
 ```
-![thonny install](./Images/ins.png)
+![thonny install](https://raw.githubusercontent.com/Cesarbautista10/ISE_SSD1306/main/Images/ins.png)
 
 Code example
 

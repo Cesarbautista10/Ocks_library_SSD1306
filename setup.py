@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.2'
+VERSION = '0.3'
 PACKAGE_NAME = 'ocks'
 AUTHOR = 'Cesar'
 AUTHOR_EMAIL = 'cesar.bautista@uelectronics.com'

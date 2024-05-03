@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ocks
-Version: 0.2
+Version: 0.3
 Summary: driver for micropython compatible with ssd1306 OLED displays.
 Author: Cesar
 Author-email: cesar.bautista@uelectronics.com
@@ -23,7 +23,7 @@ i2c = machine.I2C(0, sda=machine.Pin(21), scl=machine.Pin(22))
 
 print(i2c.scan())
 ```
-![thonny install](./Images/ins.png)
+![thonny install](https://raw.githubusercontent.com/Cesarbautista10/ISE_SSD1306/main/Images/ins.png)
 
 Code example
 
