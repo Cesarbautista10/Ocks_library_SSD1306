@@ -1,11 +1,10 @@
 Metadata-Version: 2.1
-Name: unitOled
-Version: 0.3
-Summary: i2c ssd1306 display driver for micropython
-Home-page: https://github.com/Cesarbautista10/ISE_SSD1306/archive/refs/tags/v0.3.tar.gz
-Author: Master
+Name: ocks
+Version: 0.2
+Summary: driver for micropython compatible with ssd1306 OLED displays.
+Author: Cesar
 Author-email: cesar.bautista@uelectronics.com
-License: MIT
+License: MIT License
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
@@ -23,4 +22,39 @@ import machine
 i2c = machine.I2C(0, sda=machine.Pin(21), scl=machine.Pin(22))
 
 print(i2c.scan())
+```
+![thonny install](./Images/ins.png)
+
+Code example
+
+```py
+
+
+'''
+    Unit Electronics 2023
+           (o_
+    (o_    //\
+    (/)_   V_/_ 
+    tested code mark
+    version: 0.0.1
+    revision: 0.0.1
+
+'''
+
+import machine
+from ocks import SSD1306_I2C
+
+i2c = machine.I2C(0,sda=machine.Pin(21), scl=machine.Pin(22))
+
+oled = SSD1306_I2C(128, 32, i2c)
+
+oled.fill(1)
+oled.show()
+
+oled.fill(0)
+oled.show()
+oled.text('UNIT', 50, 10)
+oled.text('ELECTRONICS', 25, 20)
+
+oled.show()
 ```

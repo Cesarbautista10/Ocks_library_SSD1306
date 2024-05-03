@@ -3,13 +3,12 @@ from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.3'
-PACKAGE_NAME = 'unitOled'
-AUTHOR = 'Master'
+VERSION = '0.2'
+PACKAGE_NAME = 'ocks'
+AUTHOR = 'Cesar'
 AUTHOR_EMAIL = 'cesar.bautista@uelectronics.com'
-LICENSE = 'MIT'
-DESCRIPTION = 'i2c ssd1306 display driver for micropython'
-URL = 'https://github.com/Cesarbautista10/ISE_SSD1306/archive/refs/tags/v0.3.tar.gz'
+LICENSE = 'MIT License'
+DESCRIPTION = 'driver for micropython compatible with ssd1306 OLED displays.'
 # Read the contents of your README file for the long description
 with open('README.md', 'r', encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
@@ -21,7 +20,6 @@ setup(
     name=PACKAGE_NAME,
     version=VERSION,
     description=DESCRIPTION,
-    url=URL,
     long_description=LONG_DESCRIPTION,
     long_description_content_type='text/markdown',  # Specify the type of content
     author=AUTHOR,
