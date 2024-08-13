@@ -1,5 +1,9 @@
 # SSD1306 Library
 
+> [!NOTE]
+>   Version 0.0.4 is the latest version of the library. This update includes the following changes:
+>  - Added the rotation feature to the library.
+
 This repository contains a modified version of the [micropython-ssd1306](https://github.com/stlehmann/micropython-ssd1306/tree/master?tab=readme-ov-file) library with the main objective of simplifying the installation process. This project has removed support for SPI and retains only the I2C functionality from the original library. All credits and acknowledgments go to the original author.
 
 The focus of this repository is to prepare the library for uploading to PyPI and renaming it before the upload.

@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: ocks
-Version: 0.3
-Summary: driver for micropython compatible with ssd1306 OLED displays.
+Version: 0.0.4
+Summary: Version 0.0.4 of the library has added a rotation feature.
 Author: Cesar
 Author-email: cesar.bautista@uelectronics.com
 License: MIT License
@@ -9,6 +9,10 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 
 # SSD1306 Library
+
+> [!NOTE]
+>   Version 0.0.4 is the latest version of the library. This update includes the following changes:
+>  - Added the rotation feature to the library.
 
 This repository contains a modified version of the [micropython-ssd1306](https://github.com/stlehmann/micropython-ssd1306/tree/master?tab=readme-ov-file) library with the main objective of simplifying the installation process. This project has removed support for SPI and retains only the I2C functionality from the original library. All credits and acknowledgments go to the original author.
 
@@ -25,7 +29,12 @@ print(i2c.scan())
 ```
 ![thonny install](https://raw.githubusercontent.com/Cesarbautista10/ISE_SSD1306/main/Images/ins.png)
 
-Code example
+
+The next diagram illustrates the communication between one of the two microcontrollers and the ability to display a default text on the OLED screen.
+
+![](https://raw.githubusercontent.com/Cesarbautista10/ISE_SSD1306/main/Images/OLED1.jpg)
+
+## Code example
 
 ```py
 

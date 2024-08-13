@@ -3,12 +3,12 @@ from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.3'
+VERSION = '0.0.4'
 PACKAGE_NAME = 'ocks'
 AUTHOR = 'Cesar'
 AUTHOR_EMAIL = 'cesar.bautista@uelectronics.com'
 LICENSE = 'MIT License'
-DESCRIPTION = 'driver for micropython compatible with ssd1306 OLED displays.'
+DESCRIPTION = 'Version 0.0.4 of the library has added a rotation feature.'
 # Read the contents of your README file for the long description
 with open('README.md', 'r', encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()

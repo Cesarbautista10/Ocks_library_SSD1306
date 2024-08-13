@@ -71,6 +71,24 @@ class SSD1306(framebuf.FrameBuffer):
         self.fill(0)
         self.show()
 
+
+    def set_rotation(self, rotation):
+        # Rotation can be 0, 1, 2, or 3 corresponding to 0, 90, 180, 270 degrees
+        if rotation == 0:
+            self.write_cmd(SET_COM_OUT_DIR | 0x08)  # normal direction
+            self.write_cmd(SET_SEG_REMAP | 0x01)    # column addr 127 mapped to SEG0
+        elif rotation == 1:
+            self.write_cmd(SET_COM_OUT_DIR | 0x00)  # reverse direction
+            self.write_cmd(SET_SEG_REMAP | 0x00)    # column addr 0 mapped to SEG0
+        elif rotation == 2:
+            self.write_cmd(SET_COM_OUT_DIR | 0x08)  # normal direction
+            self.write_cmd(SET_SEG_REMAP | 0x00)    # column addr 0 mapped to SEG0
+        elif rotation == 3:
+            self.write_cmd(SET_COM_OUT_DIR | 0x00)  # reverse direction
+            self.write_cmd(SET_SEG_REMAP | 0x01)    # column addr 127 mapped to SEG0
+
+
+            
     def poweroff(self):
         self.write_cmd(SET_DISP | 0x00)
 
